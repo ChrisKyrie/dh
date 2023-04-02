@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <configuration debug="false" scan="true" scanPeriod="60 second">
 
-    <property name="PROJECT" value="dh"/>
-    <property name="LOGDIR" value="logs/${PROJECT}/"/>
+    <property name="PROJECT" value="dh-app"/>
+    <property name="LOGDIR" value="../logs/${PROJECT}/"/>
     <property name="FILESIZE" value="50MB"/>
     <property name="MAXHISTORY" value="30"/>
     <timestamp key="DATETIME" datePattern="yyyy-MM-dd HH:mm:ss"/>

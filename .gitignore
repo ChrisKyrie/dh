@@ -25,3 +25,5 @@ hs_err_pid*
 /dh-app/target/
 /dh-app/dh-app.iml
 /.idea/
+/dh-app/output/
+/dh-app/deploy/docker/centos-dh
