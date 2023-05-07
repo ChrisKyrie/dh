@@ -1,4 +1,4 @@
-package com.dh.app.config;
+package com.dh.admin.config;
 
 import com.github.xiaoymin.knife4j.spring.extension.OpenApiExtensionResolver;
 import lombok.extern.slf4j.Slf4j;

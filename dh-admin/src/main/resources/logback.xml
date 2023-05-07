@@ -123,7 +123,7 @@
     <logger name="com.github.miemiedev.mybatis.paginator" level="INFO" additivity="false"/>
 
     <!--创建一个具体的日志输出-->
-    <logger name="com.dh.app" level="DEBUG" additivity="false">
+    <logger name="com.dh.admin" level="DEBUG" additivity="false">
         <!--可以有多个appender-ref，即将日志记录到不同的位置-->
         <appender-ref ref="DEBUG"/>
         <appender-ref ref="ERROR"/>

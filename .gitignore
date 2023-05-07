@@ -22,8 +22,9 @@
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 
-/dh-app/target/
-/dh-app/dh-app.iml
+/dh-admin/target/*
+/dh-admin/dh-admin.iml
 /.idea/
-/dh-app/output/
-/dh-app/deploy/docker/centos-dh
+/dh-admin/output/
+/dh-admin/deploy/docker/centos-dh
+/dh-common/dh-common.iml
