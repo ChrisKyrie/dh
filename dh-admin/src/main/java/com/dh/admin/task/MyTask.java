@@ -17,6 +17,6 @@ public class MyTask {
 
     @Scheduled(fixedDelay = 1000L)
     private void schedulerTask(){
-        System.out.println("This is scheduler task");
+        System.out.println("This is scheduler task and thread name is " + Thread.currentThread().getName());
     }
 }

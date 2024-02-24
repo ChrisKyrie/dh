@@ -25,6 +25,6 @@ public class EmployeeController {
 
     @GetMapping("/test")
     public void test(){
-        throw new ApiException(ResultCode.FAILED);
+        employeeService.testAsyncTask();
     }
 }
