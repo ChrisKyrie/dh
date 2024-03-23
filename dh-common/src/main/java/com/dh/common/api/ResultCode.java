@@ -1,5 +1,10 @@
 package com.dh.common.api;
 
+import com.dh.common.context.LocaleContext;
+import com.dh.common.utils.I18nUtils;
+
+import java.util.Locale;
+
 public enum ResultCode implements IErrorCode {
     SUCCESS(200, "操作成功"),
     FAILED(500, "操作失败"),
@@ -21,6 +26,16 @@ public enum ResultCode implements IErrorCode {
 
     @Override
     public String getMessage() {
-        return message;
+        Locale locale = LocaleContext.get();
+        if (locale == null) {
+            locale = Locale.getDefault();
+        }
+        return getMessage(locale);
+    }
+
+
+    @Override
+    public String getMessage(Locale locale) {
+        return I18nUtils.getMessage(String.valueOf(code), locale);
     }
 }
