@@ -1,5 +1,6 @@
 package com.dh.admin.controller;
 
+import com.dh.admin.audit.Audit;
 import com.dh.admin.service.EmployeeService;
 import com.dh.common.api.CommonResult;
 import lombok.extern.slf4j.Slf4j;
@@ -17,6 +18,7 @@ public class EmployeeController {
     private EmployeeService employeeService;
 
     @GetMapping("/list")
+    @Audit(description = "list users", operationType = "ListUsers")
     public CommonResult listUsers() {
         return CommonResult.success(employeeService.listEmployee());
     }
